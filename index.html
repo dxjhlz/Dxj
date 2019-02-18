@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width: 999999999999999px;
+			height: 300px;
+			overflow: hidden;
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+		.box img{
+			float: left;
+			width: 200px;
+		}
+		.show{
+			width: 600px;
+			height: 300px;
+			overflow: hidden;
+			margin:auto;
+		}
+		.left,.right{
+			overflow: hidden; 	
+			float: left;
+		}
+		.btn{
+			width: 100px;
+			height: 3px;
+			margin:auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="show" id="show">
+		<div class="box" id="box">
+			<div class="left">
+				<img src="img/1.jpg" alt="图" class="">
+				<img src="img/2.jpg" alt="图" class="">
+				<img src="img/3.jpg" alt="图" class="">
+				<img src="img/4.jpg" alt="图" class="">
+				<img src="img/5.jpg" alt="图" class="">
+			</div>
+			<div class="right">
+				<img src="img/1.jpg" alt="图" class="">
+				<img src="img/2.jpg" alt="图" class="">
+				<img src="img/3.jpg" alt="图" class="">
+				<img src="img/4.jpg" alt="图" class="">
+				<img src="img/5.jpg" alt="图" class="">
+			</div>
+		</div>
+	</div>
+		<div class="btn" id="btn">
+		<input type="button" name="left" value="left">
+		<input type="button" name="right" value="right">
+	</div>
+	
+</body>
+	<script type="text/javascript">
+	var box=document.getElementById('box');
+	var btn=document.getElementById('btn').getElementsByTagName('input');
+	var show =document.getElementById('show');
+// 	var t = setInterval(fun1,30);
+// 	var _index=0;
+// 	function fun1(){
+// 		_index +=2;
+// 		box.style.left=-_index+'px';
+// 		if(_index>=1000){
+// 			_index=0;
+// 		}
+// 		 if(_index%200==0){
+// 		 	clearInterval(t);
+// 		 	var t1 =setTimeout(function(){
+// 		 		var t = setInterval(fun1,30);
+// 		 	}, 1000);
+//    		}
+   		 
+// }	
+	// var _index =0;
+	// function fun(){
+	// 	btn[1].onclick=function(){
+	// 		_index+=2;
+	// 		if(_index>=1000){
+	// 		_index=0;
+	// 	}
+	// 	}
+	// 	btn[0].onclick=function(){
+	// 		_index-=2;
+	// 		if(_index<=-1000){
+	// 			_index=0;}}
+	// 	box.style.left=-_index+'px';
+	// 	if(_index%200==0){
+	// 	 	clearInterval(t);
+	// 	 	// clearTimeout(t1);
+	// 	 	var t1 =setTimeout(function(){
+	// 			t = setInterval(fun,10);
+	// 	 	},1000);	
+	// }}
+	// var t = setInterval(fun,10);
+	// 分界线
+	var _index=0;
+	var _bl=true;
+	var t2;
+	// var a =-1;
+	btn[0].onclick=function(){
+		_bl=true;
+		// var a =-1;
+	}
+	btn[1].onclick=function(){
+		_bl=false;
+		// var a =1
+	}
+	var t1 =setInterval('move(_bl)',3);
+	function move(bl){
+		// _index+=2*a;
+		if(bl){
+			_index-=2;
+			if(_index<=-1000){
+				_index=0;
+			}
+		}
+		else{
+			_index+=2;
+			if(_index>=0){
+				_index=-1000;
+			}
+		}
+		if(_index%200==0){
+		 	clearInterval(t1);
+		 	// clearTimeout(t1);
+		 		 t2=setTimeout(function(){
+				t1 = setInterval('move(_bl)',10);
+		 	},1000);	
+		 	
+	}
+			box.style.left=_index+'px';
+	}
+	show.onmouseover=function(){
+				clearInterval(t1);
+				clearTimeout(t2);
+			};
+	show.onmouseout=function(){
+			clearInterval(t1);
+			clearTimeout(t2);
+			t2 =setTimeout(function(){
+			t1 = setInterval('move(_bl)',10);
+		 	},3);
+			}
+	</script>
+</html>
