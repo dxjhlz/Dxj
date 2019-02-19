@@ -8,28 +8,28 @@ var box131 = document.getElementById('box1-3-1');
 // var box13123 = document.getElementById('box1-3-1-2-3');
 // var box13124 = document.getElementById('box1-3-1-2-4');
 // var box13125 = document.getElementById('box1-3-1-2-5');
-// var _index= 0;
+var _index= 0;
 var _bool=true;
 var _bool1=true;
-// window.onload=function(){
-// 	box1.style.top=_index+'px';
-// }
-// window.onmousewheel=function(e){
-// 	if (e.wheelDelta){
-// 		if(_index!=0){
-// 			if(e.wheelDelta>0){
-// 				_index+=626;
-// 				box1.style.top=_index+'px';
-// 			}
-// 	}
-// 		if(_index!=-1252){
-// 			if(e.wheelDelta<0){
-// 				_index-=626;
-// 				box1.style.top=_index+'px';
-// 			}
-// 		}
-// 	}
-// 	}
+window.onload=function(){
+	box1.style.top=_index+'px';
+}
+window.onmousewheel=function(e){
+	if (e.wheelDelta){
+		if(_index!=0){
+			if(e.wheelDelta>0){
+				_index+=626;
+				box1.style.top=_index+'px';
+			}
+	}
+		if(_index!=-1252){
+			if(e.wheelDelta<0){
+				_index-=626;
+				box1.style.top=_index+'px';
+			}
+		}
+	}
+	}
 	if(_bool=true){
 		_bool=false;
 		box12.onmouseover=function(){
