@@ -31,14 +31,14 @@ body{
 .boxcover-left{
 	top: 0;
 	left: 0;
-	font:400 20px "Comic Sans MS";
+	font:400 40px "Comic Sans MS";
 	text-align: right;
 	background: rgb(165,189,189);
 }
 .boxcover-right{
 	top: 0;
 	left: 49.9%;
-	font:400 20px "Comic Sans MS";
+	font:400 40px "Comic Sans MS";
 	text-align: left;
 	background: rgb(165,189,189);
 }
