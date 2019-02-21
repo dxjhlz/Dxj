@@ -37,7 +37,7 @@ body{
 }
 .boxcover-right{
 	top: 0;
-	left: 50%;
+	left: 49.9%;
 	font:400 20px "Comic Sans MS";
 	text-align: left;
 	background: rgb(165,189,189);
@@ -53,9 +53,10 @@ body{
 	height: 135px;
 	border-radius: 50%;
 	margin:auto;
-	margin-top: 50px;
+	margin-top: 60px;
 	background: url(../img/3.jpg) 0 5px;
 	background-size: 140px 140px;
+	border: 2px solid rgba(0,0,0,.4);
 }
 .box2-1-1p{
 	text-align: center;
@@ -71,16 +72,18 @@ body{
 .box2-1-3p{
 	text-align: center;
 	margin-top: 5px;
+	line-height: 23px;
 	font-family: "黑体";
-	font-size: 14px;
+	font-size: 18px;
 }
 .box2-1-4p{
 	text-align: center;
 	margin-top: 5px;
+	line-height: 23px;
 	font-family: "黑体";
 	color:rgb(248,47,14);
 	margin-bottom: 10px;
-	font-size: 14px;
+	font-size: 18px;
 }
 .box2-2{
 	width: 100%;
@@ -104,14 +107,18 @@ body{
 	text-indent: 2em;
 	margin: auto;
 	line-height: 28px;
-	font-size: 12px;
+	font-size:16px ;
+	font-family: "宋体";
+	color: rgba(0,0,0,.8);
 }
 .box2-2-4{
 	width: 85%;
 	/*height: 140px;*/
 	margin-left: 11%;
 	line-height: 28px;
-	font-size: 12px;
+	font-size:16px;
+	font-family: "宋体";
+	color: rgba(0,0,0,.8);
 }
 .box2-3{
 	width: 100%;
