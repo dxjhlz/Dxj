@@ -75,8 +75,8 @@ window.onmousewheel=function(e){
 				boxcover.style.display='none';
 			}, 3000)
 		}
-		left.style.lineHeight=window.screen.height-40+'px';
-		right.style.lineHeight=window.screen.height-40+'px';
+		left.style.lineHeight=window.screen.height-200+'px';
+		right.style.lineHeight=window.screen.height-200+'px';
 		clearTimeout(t2);
 		clearTimeout(t3);
 
