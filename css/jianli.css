@@ -347,9 +347,37 @@ body{
 .box1-6:hover .box1-6-1zt{
 	left: 140px;
 }
-.boxm{
+.box2{
 	display: none;
 }
-.boxm1{
+.boxcover{
 	display: none;
 }
+/*.boxcover1{
+	width: 1356px;
+	height: 626px;
+	background: red;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:1000;
+}*/
+/*.boxcover1-left,.boxcover1-right{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+}
+.boxcover1-left{
+	top: 0;
+	left: 0;
+	font:400 20px "Comic Sans MS";
+	text-align: right;
+	background: rgb(165,189,189);
+}
+.boxcover1-right{
+	top: 0;
+	left: 50%;
+	font:400 20px "Comic Sans MS";
+	text-align: left;
+	background: rgb(165,189,189);
+}*/
